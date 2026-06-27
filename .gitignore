@@ -1,5 +1,6 @@
 node_modules
-database/revenue.db
-*.db
 dist
+frontend/dist
+backend/database/revenue.db
+*.db
 .env
