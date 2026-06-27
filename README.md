@@ -1,105 +1,213 @@
-# RevenueFlow
+# RevenueFlow – Monetization Integration & Revenue Dashboard
 
-RevenueFlow is a production-ready full stack application that combines a polished payment checkout experience with an analytics dashboard and quality sign-off workflow. It uses React, Vite, Node.js, Express, SQLite, Axios, Chart.js, and Tailwind CSS.
+RevenueFlow is a full-stack web application that simulates a modern payment checkout experience while providing real-time revenue analytics. It enables users to process payments, monitor transaction performance, and review quality sign-off metrics through an intuitive dashboard.
 
-## Project Overview
+---
 
-RevenueFlow demonstrates:
-- A modern payment checkout flow with validation and loading/error/success states
-- A responsive analytics dashboard with revenue and payment insights
-- Quality sign-off management for matching accuracy and review status
-- SQLite-backed persistence for reliable local development and deployment readiness
+## 🚀 Live Demo
 
-## Features
+### Backend
 
-- Responsive landing page and checkout form
-- Backend payment processing with random success/failure simulation
-- Automatic SQLite database initialization and seed data
-- Revenue trends, payment distribution, and payment history visualization
-- Quality sign-off form and latest review display
-- Clean, mobile-friendly UI using Tailwind CSS
+https://revenueflow.onrender.com
 
-## Tech Stack
+### Frontend
 
-- Frontend: React, Vite, Tailwind CSS, Axios, Chart.js
-- Backend: Node.js, Express, SQLite
+Add your deployed frontend URL here.
 
-## Folder Structure
+---
 
-```text
+## 📂 GitHub Repository
+
+https://github.com/gokulakb/revenueflow
+
+---
+
+## ✨ Features
+
+* Secure payment checkout flow
+* Payment success and failure simulation
+* Automatic transaction ID generation
+* Revenue analytics dashboard
+* Total revenue tracking
+* Successful and failed payment statistics
+* Conversion rate calculation
+* Latest payment history
+* Quality sign-off management
+* Responsive modern UI
+* SQLite database integration
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+
+* React.js
+* Vite
+* Axios
+* React Router
+* Tailwind CSS
+
+### Backend
+
+* Node.js
+* Express.js
+* SQLite
+* CORS
+
+---
+
+## 📁 Project Structure
+
+```
 revenueflow/
+│
 ├── backend/
 │   ├── controllers/
 │   ├── database/
 │   ├── models/
 │   ├── routes/
-│   ├── database.js
-│   ├── package.json
-│   └── server.js
+│   ├── server.js
+│   └── package.json
+│
 ├── frontend/
-│   ├── components/
-│   ├── pages/
 │   ├── src/
-│   ├── App.jsx
-│   ├── api.js
-│   ├── index.html
-│   ├── package.json
-│   ├── postcss.config.js
-│   ├── tailwind.config.js
-│   └── vite.config.js
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── api.js
+│   │   └── main.jsx
+│   ├── public/
+│   └── package.json
+│
 └── README.md
 ```
 
-## Installation
+---
 
-1. Install backend dependencies:
-   ```bash
-   cd backend
-   npm install
-   ```
+## ⚙️ Installation
 
-2. Install frontend dependencies:
-   ```bash
-   cd ../frontend
-   npm install
-   ```
+### Clone the repository
 
-## Running Backend
+```bash
+git clone https://github.com/gokulakb/revenueflow.git
+cd revenueflow
+```
+
+### Backend Setup
 
 ```bash
 cd backend
+npm install
 npm start
 ```
 
-The backend will run at http://localhost:5000.
+Backend runs on:
 
-## Running Frontend
+```
+http://localhost:5001
+```
+
+### Frontend Setup
 
 ```bash
 cd frontend
+npm install
 npm run dev
 ```
 
-The frontend will run at http://localhost:3000.
+Frontend runs on:
 
-## API Endpoints
+```
+http://localhost:3000
+```
 
-- POST /api/payment
-- GET /api/payment
-- GET /api/analytics
-- POST /api/quality/signoff
-- GET /api/quality
+---
 
-## Deployment on Render
+## 📌 API Endpoints
 
-1. Create a new Web Service for the backend and set the root directory to backend.
-2. Create a static site for the frontend and set the root directory to frontend.
-3. Build command for frontend: npm run build
-4. Publish directory for frontend: dist
-5. Set the backend start command: npm start
+### Payments
 
-## Future Improvements
+| Method | Endpoint       | Description          |
+| ------ | -------------- | -------------------- |
+| GET    | `/api/payment` | Fetch all payments   |
+| POST   | `/api/payment` | Create a new payment |
 
-- Add authentication and role-based access
-- Integrate real payment gateways such as Stripe
-- Add persistent user accounts and exportable reports
+### Analytics
+
+| Method | Endpoint         | Description       |
+| ------ | ---------------- | ----------------- |
+| GET    | `/api/analytics` | Revenue analytics |
+
+### Quality Sign-Off
+
+| Method | Endpoint               | Description            |
+| ------ | ---------------------- | ---------------------- |
+| GET    | `/api/quality`         | Fetch quality sign-off |
+| POST   | `/api/quality/signoff` | Save quality sign-off  |
+
+---
+
+## 📊 Dashboard Metrics
+
+* Total Revenue
+* Successful Payments
+* Failed Payments
+* Conversion Rate
+* Revenue Trend
+* Latest Payments
+* Matching Accuracy
+* Quality Sign-Off
+
+---
+
+## 📸 Screenshots
+
+Add screenshots of:
+
+* Home Page
+* Checkout Page
+* Payment Success
+* Revenue Dashboard
+* Quality Sign-Off
+
+---
+
+## 🎯 Project Workflow
+
+```
+Home
+   │
+   ▼
+Checkout Payment
+   │
+   ▼
+Payment Processing
+   │
+   ▼
+Success / Failure
+   │
+   ▼
+Revenue Dashboard
+   │
+   ▼
+Quality Sign-Off
+```
+
+---
+
+## 📈 Future Improvements
+
+* Payment Gateway Integration
+* User Authentication
+* JWT Security
+* Role-Based Access Control
+* Email Notifications
+* Export Analytics Reports
+* Interactive Charts
+* PostgreSQL Database
+* Docker Support
+
+---
+
+
+This project is developed for educational and learning purposes.
